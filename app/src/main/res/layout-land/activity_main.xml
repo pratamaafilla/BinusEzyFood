@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewBinusEzyFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binus EzyFood"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickDrinks"
+        android:text="Drinks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icons8_bottle_of_water_96" />
+
+    <ImageButton
+        android:id="@+id/buttonSnacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickSnacks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icons8_french_fries_96" />
+
+    <ImageButton
+        android:id="@+id/buttonTopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickTopup"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSnacks"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSnacks"
+        app:layout_constraintTop_toTopOf="@+id/buttonSnacks"
+        app:srcCompat="@drawable/icons8_paper_money_96" />
+
+    <ImageButton
+        android:id="@+id/buttonFoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickFood"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDrinks"
+        app:layout_constraintStart_toEndOf="@+id/buttonDrinks"
+        app:layout_constraintTop_toTopOf="@+id/buttonDrinks"
+        app:srcCompat="@drawable/icons8_meal_96" />
+
+    <ImageButton
+        android:id="@+id/buttonCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickCart"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBinusEzyFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBinusEzyFood"
+        app:srcCompat="@drawable/icons8_shopping_cart_48" />
+
+    <ImageButton
+        android:id="@+id/buttonHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickHistory"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBinusEzyFood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBinusEzyFood"
+        app:srcCompat="@drawable/icons8_order_history_48" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Drinks"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDrinks"
+        app:layout_constraintStart_toStartOf="@+id/buttonDrinks"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDrinks" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Snacks"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSnacks"
+        app:layout_constraintStart_toStartOf="@+id/buttonSnacks"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSnacks" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Foods"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFoods"
+        app:layout_constraintStart_toStartOf="@+id/buttonFoods"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFoods" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Top Up"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTopup"
+        app:layout_constraintStart_toStartOf="@+id/buttonTopup"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTopup" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:text="Cart"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCart"
+        app:layout_constraintStart_toStartOf="@+id/buttonCart"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCart" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHistory"
+        app:layout_constraintStart_toStartOf="@+id/buttonHistory"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your balance is"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBinusEzyFood"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/textViewBinusEzyFood"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBinusEzyFood" />
+
+    <TextView
+        android:id="@+id/textViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp2.000.000"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

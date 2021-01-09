@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ItemsActivity.FoodsActivity">
+
+    <ImageButton
+        android:id="@+id/buttonHistory4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickHistory"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDrinks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewDrinks"
+        app:srcCompat="@drawable/icons8_order_history_48" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHistory4"
+        app:layout_constraintStart_toStartOf="@+id/buttonHistory4"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <ImageButton
+        android:id="@+id/buttonCart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#FFFFFF"
+        android:onClick="clickCart"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDrinks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewDrinks"
+        app:srcCompat="@drawable/icons8_shopping_cart_48" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cart"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCart2"
+        app:layout_constraintStart_toStartOf="@+id/buttonCart2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCart2" />
+
+    <TextView
+        android:id="@+id/textViewDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Foods"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonFrenchFries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:onClick="clickHamburger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDrinks"
+        app:srcCompat="@drawable/icons8_hamburger_96" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Hamburger"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFrenchFries"
+        app:layout_constraintStart_toStartOf="@+id/buttonFrenchFries"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFrenchFries" />
+
+    <ImageButton
+        android:id="@+id/buttonDoughnut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="#FFFFFF"
+        android:onClick="clickSandwich"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDrinks"
+        app:srcCompat="@drawable/icons8_sandwich_96" />
+
+    <TextView
+        android:id="@+id/textViewJusApel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sandwich"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDoughnut"
+        app:layout_constraintStart_toStartOf="@+id/buttonDoughnut"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDoughnut" />
+
+    <ImageButton
+        android:id="@+id/buttonCinnamonRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#FFFFFF"
+        android:onClick="clickTaco"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDoughnut"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDoughnut"
+        app:layout_constraintTop_toTopOf="@+id/buttonDoughnut"
+        app:srcCompat="@drawable/icons8_taco_96" />
+
+    <TextView
+        android:id="@+id/textViewJusAlpukat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Taco"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCinnamonRoll"
+        app:layout_constraintStart_toStartOf="@+id/buttonCinnamonRoll"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCinnamonRoll" />
+
+    <ImageButton
+        android:id="@+id/buttonPretzel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:background="#FFFFFF"
+        android:onClick="clickFriedEgg"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFrenchFries"
+        app:layout_constraintStart_toEndOf="@+id/buttonFrenchFries"
+        app:layout_constraintTop_toTopOf="@+id/buttonFrenchFries"
+        app:srcCompat="@drawable/icons8_fry_96" />
+
+    <TextView
+        android:id="@+id/textViewJusMangga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Fried Egg"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPretzel"
+        app:layout_constraintStart_toStartOf="@+id/buttonPretzel"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPretzel" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp40.000"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp35.000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJusApel"
+        app:layout_constraintStart_toStartOf="@+id/textViewJusApel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJusApel" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp21.000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJusMangga"
+        app:layout_constraintStart_toStartOf="@+id/textViewJusMangga"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJusMangga" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp33.000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJusAlpukat"
+        app:layout_constraintStart_toStartOf="@+id/textViewJusAlpukat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJusAlpukat" />
+</androidx.constraintlayout.widget.ConstraintLayout>
